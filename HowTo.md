@@ -17,7 +17,16 @@ brew install sdl2
 
 ## Linux
 
+1. Install SDL2
+```bash
+sudo apt update
+sudo apt install libsdl2-2.0-0 libsdl2-dev
+sudo apt install libsdl2-image-2.0-0 libsdl2-image-dev
+sudo apt install libsdl2-mixer-2.0-0 libsdl2-mixer-dev
+sudo apt install libsdl2-ttf-2.0-0 libsdl2-ttf-dev
+```
 
+2. Install [Swift for linux](https://www.swift.org/install/linux/)
 
 ## Windows
 
