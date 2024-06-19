@@ -28,6 +28,22 @@ sudo apt install libsdl2-ttf-2.0-0 libsdl2-ttf-dev
 
 2. Install [Swift for linux](https://www.swift.org/install/linux/)
 
+3. Set up **PATH** for Swift (for Ubuntu):
+
+```bash
+nano ~/.bashrc
+```
+
+Add a line at the end with "Swift package location", for example if it is located at '/home/username/swift':
+```bash
+export PATH=/home/username/swift/usr/bin:"${PATH}"
+```
+
+Save "~/.bashrc", and set new config:
+```bash
+source ~/.bashrc
+```
+
 ## Windows
 
 1. Download [SDL2-devel-?.??.?-VC.zip
