@@ -1,13 +1,13 @@
 import SDL
 
-print("Iniciant SDL...")
+print("Initiating SDL...")
 
 // Initialize SDL
 if SDL_Init(Uint32(SDL_INIT_VIDEO)) != 0 {
     print("SDL could not initialize! SDL_Error: \(String(cString: SDL_GetError()))")
     exit(1)
 }
-print("SDL inicialitzat correctament.")
+print("SDL initialized.")
 
 // Create window
 let window = SDL_CreateWindow("SDL2 Swift Window",
@@ -20,7 +20,7 @@ if window == nil {
     SDL_Quit()
     exit(1)
 }
-print("Finestra creada correctament.")
+print("SDL window created.")
 
 // Create renderer
 let renderer = SDL_CreateRenderer(window, -1, Uint32(SDL_RENDERER_ACCELERATED.rawValue))
@@ -30,10 +30,10 @@ if renderer == nil {
     SDL_Quit()
     exit(1)
 }
-print("Renderer creat correctament.")
+print("Renderer created.")
 
 // Main loop
-print("Entrant al bucle principal.")
+print("Entering main loop.")
 var isRunning = true
 var event = SDL_Event()
 while isRunning {
@@ -60,10 +60,10 @@ while isRunning {
     // Delay to control frame rate
     SDL_Delay(16) // approximately 60 frames per second
 }
-print("Sortint del bucle principal.")
+print("Exiting main loop.")
 
 // Destroy window and renderer
 SDL_DestroyRenderer(renderer)
 SDL_DestroyWindow(window)
 SDL_Quit()
-print("SDL finalitzat correctament.")
+print("SDL quit.")
