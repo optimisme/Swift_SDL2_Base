@@ -7,7 +7,7 @@ let package = Package(
         .macOS(.v11),
     ],
     dependencies: [
-        .package(url: "https://github.com/ctreffs/SwiftSDL2.git", from: "1.4.1")
+        .package(url: "https://github.com/ctreffs/SwiftSDL2.git", from: "1.4.1"),
     ],
     targets: [
         .executableTarget(
